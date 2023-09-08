@@ -11,8 +11,8 @@ Class User extends Controller {
 
     public function profile(){
         $data['judul'] = 'User';
-        $data['nama'] = "fatkhur";
-        $data['pekerjaan'] = "programmer";
+        $data['nama'] = "AAN";
+        $data['pekerjaan'] = "DIRI";
         $this->view("templates/header", $data);
         $this->view("user/profile", $data);
         $this->view("templates/footer", $data);

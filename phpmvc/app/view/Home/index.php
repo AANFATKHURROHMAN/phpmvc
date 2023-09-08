@@ -1,20 +1,24 @@
 <style>
    body {
-    background-image: url(http://localhost/phpmvc/img/aliien.jpg);
+    background-image: url(http://localhost/phpmvc/img/peakpx.jpg);
+    background-size: cover;
    }
    
-  
-   .jumbotron {
-    opacity: 0.9;
-}
+   h1,p,a {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+   }
 
-
+   span{
+    color: red;
+   }
 </style>
 <div class="container">
-    <div class="jumbotron mt-4">
-        <h1 class="display-4" style="color: ;"> Helo, Selamat Datang Di Website Saya</h1>
-        <hr class="my-4">
-        <p>Selamat Melihat Tampilan Absurtnya</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn More</a>
+    <div class="jumbotron mt-4" style="background: transparent;">
+        <h1 class="display-5" style="color: ;">Selamat Datang Di Website <br><span>SMKN 2 TRENGGALEK</span></br></h1>
+        <hr class="my-1">
+        <p>Mohon Maaf Apabila WEB ini Semrawut</p>
+        
     </div>
 </div>

@@ -4,16 +4,16 @@
         <div class="col-6">
             <?php FLasher::flash(); ?>
             <h3>Daftar Guru</h3>
-            <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modol">
+            <button type="button" class="btn btn-danger mb-2" data-toggle="modal" data-target="#modol">
                     Tambah Guru
             </button>
 
                             <!-- Modal -->
-                            <div class="modal fade" id="modol" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
+                            <div class="modal " id="modol" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="card-body" role="document">
                                 <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Tambah Guru</h5>
+                                <div class="card-header">
+                                    <h5 class="card" id="exampleModalLabel">Tambah Guru</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                     </button>
@@ -28,7 +28,7 @@
 
                                 <div class="form-group">
                                 <label for="jenis_kelamin">Jenis Kelamin</label>
-                                <select class="form-control" id="jenis_kelamin" name="jenis_kelamin">
+                                <select class="control" id="jenis_kelamin" name="jenis_kelamin">
                                         <option value="laki-laki">Laki - laki</option>
                                         <option value="perempuan">Perempuan</option>
                                 </select>
@@ -40,7 +40,7 @@
                                 </div>
 
                                 </div>
-                                <div class="modal-footer">
+                                <div class="footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal" aria-label="Close">
                                 Close
                                 </button> <button type="submit" class="btn btn-primary">Tambah Data</button>
@@ -53,12 +53,12 @@
                             </div>
 
 
- <table class="table table-bordered">
+            <table class="table">
                 <thead>
                     <tr>
                     <th scope="col"><center>No</center></th>
                     <th scope="col"><center>Nama</center></th>
-                    <th scope="col"><center>Aksi</center></th>
+                    <th scope="col"><center></center></th>
                     </tr>
                 </thead>
                 
@@ -77,12 +77,23 @@
                             Detail
                         </button>
 
+
+                        <!--
+                        <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>-->
                             <!-- Modal -->
-                            <div class="modal fade" id="moll<?=$blog['id']?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
+                            <div class="modal " id="moll<?=$blog['id']?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="card-body" role="document">
                                 <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Detail</h5>
+                                <div class="card-header">
+                                    <h5 class="card-tittle" id="exampleModalLabel">Detail</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                     </button>
@@ -108,7 +119,7 @@
                                 </div>
 
                                 </div>
-                                <div class="modal-footer">
+                                <div class="footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal" aria-label="Close">
                                 Close
                                 </div>
@@ -124,11 +135,11 @@
                         </button>
 
                             <!-- Modal -->
-                            <div class="modal fade" id="exampleModal<?=$blog['id']?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
+                            <div class="modal" id="exampleModal<?=$blog['id']?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="card-dialog" role="document">
                                 <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Ubah Data</h5>
+                                <div class="card-header">
+                                    <h5 class="title" id="exampleModalLabel">Ubah Data</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                     </button>
@@ -143,7 +154,7 @@
 
                                 <div class="form-group">
                                 <label for="jenis_kelamin">Jenis Kelamin</label>
-                                <select class="form-control" id="jenis_kelamin" name="jenis_kelamin">
+                                <select class="control" id="jenis_kelamin" name="jenis_kelamin">
                                     <?php if($blog['jenis_kelamin'] == "laki-laki") :?>
                                         <option value="laki-laki" selected>Laki - laki</option>
                                         <option value="perempuan">Perempuan</option>
@@ -160,7 +171,7 @@
                                 </div>
 
                                 </div>
-                                <div class="modal-footer">
+                                <div class="footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal" aria-label="Close">
                                 Close
                                 </button> <button type="submit" class="btn btn-primary">Ubah Data</button>

@@ -7,7 +7,7 @@
     <title>Halaman <?= $data['judul']?></title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger">
   
   <div class="collapse navbar-collapse" id="navbarNav" style="
   margin-left:8%;
